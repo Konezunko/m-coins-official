@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-blue: #005A9C;
+  --color-secondary-blue: #E6F3FF;
+  --color-text-main: #333333;
+  --color-text-light: #666666;
+  --color-bg-light: #F8FBFE;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+  color: var(--color-text-main);
+  background-color: #ffffff;
+}
+
+/* Base custom utilities */
+.container-custom {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.heading-lg {
+  @apply text-3xl md:text-4xl font-bold text-center mb-12 text-blue-900;
+}
