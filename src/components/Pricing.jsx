@@ -13,7 +13,7 @@ const Pricing = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Spot Plan */}
           <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 flex flex-col relative overflow-hidden">
             <h3 className="text-2xl font-bold text-slate-800 mb-2">スポットトラブル解決</h3>
@@ -90,6 +90,43 @@ const Pricing = () => {
 
             <a href="#contact" className="w-full text-center bg-white text-blue-900 hover:bg-blue-50 px-6 py-3 rounded-lg font-bold transition-colors shadow-lg">
               プランの詳細を聞く
+            </a>
+          </div>
+
+          {/* Web Maintenance Plan */}
+          <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 flex flex-col relative overflow-hidden">
+            <h3 className="text-2xl font-bold text-slate-800 mb-2">ホームページ保守プラン</h3>
+            <p className="text-slate-500 mb-6">先生は触らずOK。更新依頼を受けて当方が代行します。</p>
+
+            <div className="mb-8">
+              <span className="text-sm font-bold text-slate-500">月額費用</span>
+              <div className="text-4xl font-bold text-slate-800 my-1">
+                ¥3,000<span className="text-lg text-slate-500 font-medium">〜 / 月</span>
+              </div>
+              <p className="text-xs text-slate-400">※更新頻度・ページ数に応じてご相談。</p>
+            </div>
+
+            <ul className="space-y-4 mb-8 flex-grow">
+              <li className="flex items-start gap-3">
+                <Check className="text-blue-500 shrink-0 mt-0.5" size={20} />
+                <span className="text-slate-700">お知らせ・診療時間変更の更新し放題</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="text-blue-500 shrink-0 mt-0.5" size={20} />
+                <span className="text-slate-700">休診情報・担当医変更などの即時反映</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="text-blue-500 shrink-0 mt-0.5" size={20} />
+                <span className="text-slate-700">メール・LINEで依頼するだけのかんたん運用</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="text-blue-500 shrink-0 mt-0.5" size={20} />
+                <span className="text-slate-700 text-sm">SSL・ドメイン等の基本監視</span>
+              </li>
+            </ul>
+
+            <a href="#contact" className="w-full text-center bg-white text-blue-600 border-2 border-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg font-bold transition-colors">
+              保守プランの相談
             </a>
           </div>
         </div>
