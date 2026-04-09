@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container-custom grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <div className="mb-4 bg-white inline-block p-1.5 rounded-md">
-            <img src="/logo.png" alt="M-COINS 札幌メディカルPCサポート" className="h-8 w-auto" />
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="M-COINS 札幌メディカルPCサポート" className="h-8 w-auto" />
           </div>
           <p className="text-sm leading-relaxed text-slate-400 mb-4">
             札幌市のクリニック・医療機関に特化したPC・ITサポート。電子カルテのトラブルからAI導入による診療効率化まで、経験豊富なプロが迅速に解決します。

@@ -6,7 +6,7 @@ const Header = () => {
       <div className="container-custom py-4 flex justify-between items-center">
         {/* Logo area */}
         <div className="flex items-center gap-3">
-          <img src="/logo.png" alt="M-COINS 札幌メディカルPCサポート" className="h-10 w-auto brightness-0 invert" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="M-COINS 札幌メディカルPCサポート" className="h-10 w-auto" />
           <div className="hidden sm:block">
             <p className="text-xs text-blue-100 font-medium tracking-wider">医療特化型IT・AIトラブル解決</p>
           </div>

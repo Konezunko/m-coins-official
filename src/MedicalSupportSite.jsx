@@ -121,7 +121,7 @@ export default function MedicalSupportSite(props) {
             {/* ===== Header ===== */}
             <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "16px 40px", background: "linear-gradient(to right, #1e3a5f, #2563eb)", position: "sticky", top: 0, zIndex: 100 }}>
                 <div style={{ cursor: "pointer", display: "flex", alignItems: "center" }} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-                    <img src="/logo.png" alt="M-COINS" style={{ height: "40px", width: "auto" }} />
+                    <img src={`${import.meta.env.BASE_URL}logo.png`} alt="M-COINS" style={{ height: "40px", width: "auto" }} />
                 </div>
                 <nav style={{ display: "flex", gap: "28px", alignItems: "center" }}>
                     {[
@@ -454,7 +454,7 @@ export default function MedicalSupportSite(props) {
                 <div style={{ maxWidth: "1000px", margin: "0 auto", display: "flex", flexWrap: "wrap", gap: "40px", justifyContent: "space-between", marginBottom: "40px" }}>
                     <div style={{ flex: "1 1 300px" }}>
                         <div style={{ marginBottom: "16px" }}>
-                            <img src="/logo.png" alt="M-COINS" style={{ height: "36px", width: "auto" }} />
+                            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="M-COINS" style={{ height: "36px", width: "auto" }} />
                         </div>
                         <p style={{ lineHeight: 1.8, color: "#64748b" }}>
                             医療特化型 IT・AIソリューション<br />
